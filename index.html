@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#260711">
+  <meta name="description" content="A little glimpse of memories, feelings, and wishes.">
+  <title>A Little Glimpse Towards...</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Background effects -->
+  <div class="background-glow"></div>
+  <div id="particles"></div>
+
+  <!-- Opening screen -->
+  <main id="opening-screen" class="screen active">
+    <div class="opening-content">
+      <p class="small-heading">A little something, from my heart</p>
+
+      <button id="enter-heart" class="main-heart" aria-label="Enter my heart">
+        ♥
+      </button>
+
+      <h1>A Little Glimpse Towards...</h1>
+
+      <p class="opening-description">
+        Some stories are too special to be forgotten.
+      </p>
+
+      <p class="tap-hint">Tap anywhere to enter my heart</p>
+    </div>
+  </main>
+
+  <!-- Heart menu -->
+  <main id="menu-screen" class="screen">
+    <header class="menu-header">
+      <p class="small-heading">A story written with memories</p>
+      <h1>A Little Glimpse Towards...</h1>
+      <p>Every heart holds a little piece of our story.</p>
+    </header>
+
+    <section id="heart-menu" class="heart-menu" aria-label="Choose a chapter">
+
+      <button class="chapter-heart" data-chapter="1">
+        <span>♥</span><small>01</small>
+      </button>
+
+      <button class="chapter-heart" data-chapter="2">
+        <span>♥</span><small>02</small>
+      </button>
+
+      <button class="chapter-heart" data-chapter="3">
+        <span>♥</span><small>03</small>
+      </button>
+
+      <button class="chapter-heart" data-chapter="4">
+        <span>♥</span><small>04</small>
+      </button>
+
+      <button class="chapter-heart" data-chapter="5">
+        <span>♥</span><small>05</small>
+      </button>
+
+      <button class="chapter-heart" data-chapter="6">
+        <span>♥</span><small>06</small>
+      </button>
+
+      <button class="chapter-heart" data-chapter="7">
+        <span>♥</span><small>07</small>
+      </button>
+
+      <button class="chapter-heart" data-chapter="8">
+        <span>♥</span><small>08</small>
+      </button>
+
+      <button class="chapter-heart" data-chapter="9">
+        <span>♥</span><small>09</small>
+      </button>
+
+      <button class="chapter-heart" data-chapter="10">
+        <span>♥</span><small>10</small>
+      </button>
+
+      <button class="chapter-heart" data-chapter="11">
+        <span>♥</span><small>11</small>
+      </button>
+
+      <button class="chapter-heart" data-chapter="12">
+        <span>♥</span><small>12</small>
+      </button>
+
+      <button class="chapter-heart" data-chapter="13">
+        <span>♥</span><small>13</small>
+      </button>
+
+      <button class="chapter-heart" data-chapter="14">
+        <span>♥</span><small>14</small>
+      </button>
+
+      <button class="chapter-heart final-heart" data-chapter="15">
+        <span>♥</span><small>15</small>
+      </button>
+
+    </section>
+
+    <p class="menu-footer">Take your time. Open them whenever you feel ready. ♡</p>
+  </main>
+
+  <!-- Chapter screen -->
+  <main id="chapter-screen" class="screen">
+    <div class="chapter-container">
+
+      <div class="chapter-top">
+        <button id="back-button" class="back-button">
+          ← Back to Memories
+        </button>
+
+        <p id="chapter-number" class="chapter-number">CHAPTER 01</p>
+      </div>
+
+      <div id="chapter-decoration" class="chapter-decoration">♡</div>
+
+      <h1 id="chapter-title">A Little World, Just for You</h1>
+
+      <div class="message-card">
+        <p id="chapter-message" class="chapter-message"></p>
+        <span class="message-heart">♥</span>
+      </div>
+
+      <p class="chapter-signature">A little piece of my heart...</p>
+
+    </div>
+  </main>
+
+  <!-- Final letter screen -->
+  <main id="letter-screen" class="screen">
+    <div class="letter-container">
+
+      <p class="small-heading">A final little letter</p>
+
+      <div id="envelope" class="envelope">
+        <div class="envelope-flap"></div>
+        <div class="envelope-body">
+          <span>♥</span>
+          <p>For Shajie Baa</p>
+        </div>
+      </div>
+
+      <button id="open-letter" class="letter-button">
+        Open My Letter
+      </button>
+
+      <article id="final-letter" class="final-letter hidden">
+        <p id="final-letter-message"></p>
+      </article>
+
+      <button id="letter-back-button" class="back-button">
+        ← Back to Memories
+      </button>
+
+    </div>
+  </main>
+
+  <!-- Music control (will be activated if music is added later) -->
+  <button id="music-button" class="music-button" aria-label="Toggle music">
+    ♫
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
